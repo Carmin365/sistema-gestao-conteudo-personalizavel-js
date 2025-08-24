@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS Admin</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>CMS - Painel Administrativo</h1>
+    </header>
+    
+    <main>
+        <nav class="sidebar">
+            <ul>
+                <li class="active">Páginas</li>
+                <li>Posts</li>
+                <li>Usuários</li>
+                <li><a href="#" id="abrir-modal-plugin">Plugins</a></li>
+            </ul>
+        </nav>
+
+        <section class="conteudo">
+            <h2>Editor de Páginas</h2>
+            <p>Selecione uma página para editar ou crie uma nova.</p>
+            <div id="editor-pagina">
+                <textarea placeholder="Conteúdo da página..."></textarea>
+                <button>Salvar Página</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal-plugin" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Gerenciar Plugins</h2>
+            <p>Este é um exemplo da tela de gerenciamento de plugins. Em um CMS real, você teria opções para adicionar, ativar ou desativar funcionalidades.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
